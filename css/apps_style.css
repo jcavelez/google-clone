@@ -1,0 +1,101 @@
+:root {
+    --black-color: #202124;
+    --gray-background-color: #F2F2F2;
+    --gray-border-color: #dadce0;
+    --gray-font-color: #5f6368;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: rgba(228, 227, 227, 0.418);
+    border: none;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(172, 172, 172, 0.349);
+    border: none;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(172, 172, 172, 0.274);
+    border: none;
+    border-radius: 8px;
+}
+
+body {
+    color: var(--gray-font-color);
+    
+    font-family: 'Roboto', sans-serif;
+
+    width: 350px;
+
+}
+.apps-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.apps__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    padding: 6px;
+}
+
+.apps__img {
+    width: 35px;
+    margin-bottom: 10px;
+}
+.apps__name {
+    text-align: center;
+    overflow: hidden;
+    width: 70px;
+    white-space: nowrap;
+}
+.apps__div {
+    border-bottom: 1px solid var(--gray-border-color); 
+    width: 100%;
+}
+.apps__item:hover {
+    background-color: rgba(209, 244, 250, 0.205);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.apps__item:hover .apps__name{
+    overflow: visible;
+    white-space: normal;
+}
+.apps__button {
+    background-color: white;
+    border: 1px solid var(--gray-border-color);
+    border-radius: 5px;
+    color: #1c70dd;
+    font-size: 16px;
+    text-decoration: none;
+
+    padding: 20px;
+}
+
+.apps__button:hover {
+    cursor: pointer;
+    background-color: rgba(209, 244, 250, 0.205);
+}
